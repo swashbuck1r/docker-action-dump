@@ -5,6 +5,8 @@ echo "Hello $1"
 echo "--- PWD ---"
 pwd
 
-echo "--- action environment ---"
+echo "--- dump action environment ---"
 env | sort
 
+echo "--- dump /github files ---"
+find /github -print
