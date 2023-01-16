@@ -22,7 +22,7 @@ build: ## Build the action source
 	docker build -t $(APP_NAME) .
 
 .PHONY: release
-publish-dist: release ## Build and publish the release
+release: ## Build and publish the release
 	git commit -a -m "publish release: $(VERSION)"
 	git push origin HEAD:$(VERSION)
 
