@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-echo "Hello $1"
+echo "Hello $1 $2"
 
 echo "--- PWD ---"
 pwd
